@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ella Mansell</title>
+  <title>Ella Mansell - About Me</title>
   <meta name="description" content="Ella Mansell">
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
@@ -16,23 +16,14 @@
   <!-- Start - Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
   <!-- End - Fonts -->
-  <!-- Start - Fancybox Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-  <!-- End - Fancybox Scripts -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
 </head>
 
-<body
-  class="dark:bg-black bg-white h-screen text-black dark:text-white px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<body class="bg-white h-screen text-black px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
   <!-- Navbar -->
   <header class="flex w-full overflow-hidden pt-10 pb-1">
-    <!-- Navbar -->
     <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
       <div class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
         <div class="mr-4 md:mr-8">
@@ -40,8 +31,7 @@
         </div>
         <div class="ml-auto md:hidden flex items-center justify-start">
           <button onclick="menuToggle()" @click="open = !open"
-            class="tap-highlight-transparent text-black dark:text-white w-5 h-5 relative focus:outline-none"
-            @click="open = !open">
+            class="tap-highlight-transparent text-black w-5 h-5 relative focus:outline-none" @click="open = !open">
             <span class="sr-only">Open main menu</span>
             <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <span aria-hidden="true"
@@ -51,7 +41,7 @@
                 class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out"
                 :class="{'opacity-0': open } "></span>
               <span aria-hidden="true"
-                class="block absolute h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
+                class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
                 :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
             </div>
           </button>
@@ -61,14 +51,14 @@
           <ul id="ulMenu"
             class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0">
             <li class="group transition duration-300">
-              <a href="about_me.html" class="font-signika text-2xl tap-highlight-transparent">ABOUT
-                <span
-                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+              <a href="about_me.html" class="font-signika text-2xl">ABOUT
+                <span class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black">
               </a>
             </li>
             <li class="group transition duration-300">
-              <a href="index.html" class="font-signika text-2xl tap-highlight-transparent">PORTFOLIO
-                <span class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
+              <a href="index.html" class="font-signika text-2xl">PORTFOLIO
+                <span class="hidden md:block h-0.5 bg-black"></span>
+                </span>
               </a>
             </li>
           </ul>
@@ -79,69 +69,85 @@
   <!-- Content -->
   <div class="container mx-auto">
     <h1 class="font-signika text-4xl pt-10 pb-8 font-bold"></h1>
-    <section class="text-neutral-700">
-      <div class="container">
-        <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
-          <div class="grid gap-4">
-            <div>
-              <a href="https://citizen-femme.com/2023/10/05/fashion-month-highlights-from-the-ss24-shows">
-                <img class="h-auto max-w-full"
-                  src="https://citizen-femme.com/wp-content/uploads/2023/09/VERSACE-SS24-SHOW_Finale_05-766x494.jpg">
-                <p class="font-signika">Fashion Month Round-Up: Highlights From The SS24 Shows</p>
-                <p class="font-signika italic">Citizen Femme</p>
-              </a>
-            </div>
-            <div>
-              <a href="https://theglossarymagazine.com/fashion/gucci-cosmos-exhibition-london/">
-                <img class="h-auto max-w-full"
-                  src="https://theglossarymagazine.com/cdn-cgi/image/fit=contain,width=1306/wp-content/uploads/GUCCI-COSMOS-LONDON.webp"
-                  alt="">
-                <p class="font-signika">Gucci Cosmos: A first look at the new fashion exhibition in London
-                </p>
-                <p class="font-signika italic">The Glossary</p>
-              </a>
-            </div>
-            <div>
-              <a href="https://citizen-femme.com/2023/10/02/october-sustainable-edit/">
-                <img class="h-auto max-w-full" src="https://citizen-femme.com/wp-content/uploads/2023/10/2-766x494.png"
-                  alt="">
-                <p class="font-signika">CF's October Sustainable Edit</p>
-                <p class="font-signika italic">Citizen Femme</p>
-              </a>
-            </div>
+    <div class="container">
+      <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
+        <div class="grid gap-4">
+          <div>
+            <a href="https://citizen-femme.com/2023/10/05/fashion-month-highlights-from-the-ss24-shows">
+              <img class="h-auto max-w-full"
+                src="https://citizen-femme.com/wp-content/uploads/2023/09/VERSACE-SS24-SHOW_Finale_05-766x494.jpg">
+              <p class="font-signika">Fashion Month Round-Up: Highlights From The SS24 Shows</p>
+              <p class="font-signika italic">Citizen Femme</p>
+            </a>
           </div>
-          <div class="grid gap-4">
-            <div>
-              <a href="https://citizen-femme.com/2023/09/07/fashion-exhibitions-to-visit-this-september/">
-                <img class="h-auto max-w-full "
-                  src="https://citizen-femme.com/wp-content/uploads/2023/09/Gabrielle-Chanel-31-rue-Cambon-Paris-1937.-Photo-by-Roger-Schall-766x494.jpg"
-                  alt="">
-                <p class="font-signika">Ten UK Fashion Exhibitions To Book This September</p>
-                <p class="font-signika italic">Citizen Femme</p>
-              </a>
-            </div>
-            <div>
-              <a href="https://citizen-femme.com/2023/10/17/ss24-beauty-trends/">
-                <img class="h-auto max-w-full "
-                  src="https://citizen-femme.com/wp-content/uploads/2023/10/ss24-beauty-trends-766x494.png" alt="">
-                <p class="font-signika">Fashion Month Round-Up: SS24 Beauty Trends</p>
-                <p class="font-signika italic">Citizen Femme</p>
-              </a>
-            </div>
-            <div>
-              <a
-                href="https://www.strandmagazine.co.uk/single-post/stella-s-sustainability-a-mccartney-motto-the-future-of-sustainable-fashion">
-                <img class="h-auto max-w-full" src="./assets/strand-article-pic.png" alt="">
-                <p class="font-signika">Stella’s Sustainability, a McCartney Motto: The Future of Sustainable Fashion
-                </p>
-                <p class="font-signika italic">Strand Magazine</p>
-              </a>
-            </div>
+          <div>
+            <a href="https://theglossarymagazine.com/fashion/gucci-cosmos-exhibition-london/">
+              <img class="h-auto max-w-full"
+                src="https://theglossarymagazine.com/cdn-cgi/image/fit=contain,width=1306/wp-content/uploads/GUCCI-COSMOS-LONDON.webp"
+                alt="">
+              <p class="font-signika">Gucci Cosmos: A first look at the new fashion exhibition in London
+              </p>
+              <p class="font-signika italic">The Glossary</p>
+            </a>
+          </div>
+          <div>
+            <a href="https://citizen-femme.com/2023/10/02/october-sustainable-edit/">
+              <img class="h-auto max-w-full" src="https://citizen-femme.com/wp-content/uploads/2023/10/2-766x494.png"
+                alt="">
+              <p class="font-signika">CF's October Sustainable Edit</p>
+              <p class="font-signika italic">Citizen Femme</p>
+            </a>
+          </div>
+          <div>
+            <a href="https://citizen-femme.com/2023/11/09/global-art-exhibitions-to-visit-this-november/">
+              <img class="h-auto max-w-full"
+                src="https://citizen-femme.com/wp-content/uploads/2023/11/Daniele-Rocco-766x494.jpg" alt="">
+              <p class="font-signika">Eight Global Exhibitions To Visit This November
+              </p>
+              <p class="font-signika italic">Citizen Femme</p>
+            </a>
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <a href="https://citizen-femme.com/2023/09/07/fashion-exhibitions-to-visit-this-september/">
+              <img class="h-auto max-w-full "
+                src="https://citizen-femme.com/wp-content/uploads/2023/09/Gabrielle-Chanel-31-rue-Cambon-Paris-1937.-Photo-by-Roger-Schall-766x494.jpg"
+                alt="">
+              <p class="font-signika">Ten UK Fashion Exhibitions To Book This September</p>
+              <p class="font-signika italic">Citizen Femme</p>
+            </a>
+          </div>
+          <div>
+            <a href="https://citizen-femme.com/2023/10/17/ss24-beauty-trends/">
+              <img class="h-auto max-w-full "
+                src="https://citizen-femme.com/wp-content/uploads/2023/10/ss24-beauty-trends-766x494.png" alt="">
+              <p class="font-signika">Fashion Month Round-Up: SS24 Beauty Trends</p>
+              <p class="font-signika italic">Citizen Femme</p>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.strandmagazine.co.uk/single-post/stella-s-sustainability-a-mccartney-motto-the-future-of-sustainable-fashion">
+              <img class="h-auto max-w-full" src="./assets/strand-article-pic.png" alt="">
+              <p class="font-signika">Stella’s Sustainability, a McCartney Motto: The Future of Sustainable Fashion
+              </p>
+              <p class="font-signika italic">Strand Magazine</p>
+            </a>
+          </div>
+          <div>
+            <a href="https://citizen-femme.com/2023/11/01/cfs-november-sustainable-edit/">
+              <img class="h-auto max-w-full"
+                src="https://citizen-femme.com/wp-content/uploads/2023/11/DALA-_026F-766x494.jpg" alt="">
+              <p class="font-signika">CF's November Sustainable Edit
+              </p>
+              <p class="font-signika italic">Citizen Femme</p>
+            </a>
           </div>
         </div>
       </div>
+    </div>
   </div>
-  </section>
   </div>
 
 
@@ -152,7 +158,7 @@
         <div>
           <p class="font-signika"><b>CONTACT</b></p>
           <div class="flex mx-auto">
-            <div class="mx-auto space-x-6 flex mt-8 text-gray-600 dark:text-gray-300">
+            <div class="mx-auto space-x-6 flex mt-8 text-gray-600">
               <a class="transition duration-300 hover:opacity-75" href="https://www.instagram.com/ella.mansell"
                 target="_blank" rel="noreferrer">
                 <span class="sr-only"> Instagram </span>
@@ -176,9 +182,6 @@
     </div>
   </footer>
   <!-- Script for the LightBox -->
-  <script>
-    Fancybox.bind("[data-fancybox]", {});
-  </script>
   <script src="fade_in.js"></script>
   <script src="menu.js"></script>
 </body>
